@@ -8,29 +8,114 @@
 
 /* GLOBAL =========================================================================================== */
 #navbar {
-  display: flex;
-  font-size:50px;
   cursor: pointer;
-  
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .sidebar{
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+.wrapper .sidebar h1{
+  font-size: 12%;
+}
+.wrapper .sidebar h2{
+  font-size: 12%;
+}
+.wrapper .sidebar h3{
+  font-size: 12%;
+}
+#sidebar{
+  padding-top: 3%;
+  padding-left: 3%;
+  font-size: 180%;
+}
+#logo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+#buttonShort{
+  border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    background-color: #6844B4;
+    border: #6844B4;
+}
+
+#buttonShort:hover {
+  background-color: #4824a4;
+}
+
+#buttonShortEmergency{
+  border-radius: 10px;
+    color: #BA0101;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: #FF8888;
+    border: #FF8888;
+}
+
+#buttonShortEmergency:hover {
+  background-color: #FF5A5A;
 }
 
 
 /* HOME ============================================================================================= */
 #bodyHome{
-  margin-left: 5vw;
-  margin-right: 5vw;
-
+  margin-left: 7vw;
+  margin-right: 7vw;
 }
 
 #bodyHome h1{
-  padding-top: 10vw;
+  padding-top: 30vmin;
 
   font-size: 2.2em;
   font-weight: 900;
 }
 
 #bodyHome p{
-  font-size: 1.3em;
+  padding-top: 2vw;
+  font-size: 1em;
   font-weight: 500;
 }
+
+#buttonCTA{
+  padding-top: 5vh;
+}
+
+#ambulance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ambulance p{
+  font-weight: 700;
+}
+
 
