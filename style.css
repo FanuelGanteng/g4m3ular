@@ -6,104 +6,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.body
-{
-    box-sizing: border-box;
-    font-size: 14px;
+/* GLOBAL =========================================================================================== */
+#navbar {
+  display: flex;
+  font-size:50px;
+  cursor: pointer;
+  
 }
-.body .Tulisan-Emergency h1{
-    position: absolute;
-    width: 800px;
-    height: 96px;
-    left: 430px;
-    top: 191px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 48px;
+
+
+/* HOME ============================================================================================= */
+#bodyHome{
+  margin-left: 5vw;
+  margin-right: 5vw;
+
 }
-.body .Tulisan-Emergency h2{
-position: absolute;
-width: 800px;
-height: 48px;
-left: 430px;
-top: 250px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 42px;
-line-height: 42px;
+#bodyHome h1{
+  padding-top: 10vw;
+
+  font-size: 2.2em;
+  font-weight: 900;
 }
-  .v1_23 {
-    width: 385px;
-    height: 384px;
-    background: url("../images/v1_23.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 350px;
-    left: 500px;
-    overflow: hidden;
-  }
-  .v1_24 {
-    width: 310px;
-    height: 310px;
-    background: rgba(255,58,58,0.7699999809265137);
-    opacity: 1;
-    position: absolute;
-    top: 37px;
-    left: 37px;
-    border-radius: 50%;
-  }
-  .v1_25 {
-    width: 339px;
-    height: 338px;
-    background: rgba(255,58,58,0.5);
-    opacity: 1;
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    border-radius: 50%;
-  }
-  .v1_26 {
-    width: 385px;
-    height: 384px;
-    background: rgba(255,58,58,0.30000001192092896);
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-  }
-  .body .Tulisan-Emergency h3{
-    position: absolute;
-    width: 600px;
-    height: 72px;
-    left: 400px;
-    top: 800px;
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 45px;
-    text-align: center;
-    }
-    .body .Tulisan-Emergency h4{
-    position: absolute;
-    width: 302px;
-    height: 36px;
-    left: 500px;
-    top: 995px;
+#bodyHome p{
+  font-size: 1.3em;
+  font-weight: 500;
+}
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 36px;
-    }
