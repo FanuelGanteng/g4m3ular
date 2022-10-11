@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jasa Derek</title>
+</head>
+<body>
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="#" class="nav__link" href="./home.html">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="nav__link" href="./jumper-aki.html">
+                <i class="material-icons">bolt</i>
+                Jumper Aki
+            </a>
+            <a class="nav__link" href="./tambal-ban.html">
+                <i class="material-icons">tire_repair</i>
+                Tambal Ban
+            </a>
+            <a class="nav__link nav__link--active" href="./jasa-derek.html">
+                <i class="material-icons">car_crash</i>
+                Jasa Derek
+            </a>
+            <a class="nav__link" href="./emergency.html">
+                <i class="material-icons">emergency</i>
+                Ambulance
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+    <main>
+    </main>
+    <script>
+                window.addEventListener("load", () => {
+            document.body.classList.remove("preload");
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".nav");
+
+            document.querySelector("#btnNav").addEventListener("click", () => {
+                nav.classList.add("nav--open");
+            });
+
+            document.querySelector(".nav__overlay").addEventListener("click", () => {
+                nav.classList.remove("nav--open");
+            });
+        });
+    </script>
+    <section id = "bodyHome">
+        <h1>Jasa Derek</h1>
+        <p>Mempunyai pengalaman-pengalaman kurang menyenangkan ketika di jalan? Bengkelkoe siap melayani Anda dengan jasa derek mobil yang berkualitas dan datang dengan cepat.</p>
+
+        <div id = "buttonCTA">
+            <a href="Wa.me/6282115983575?text=Halo%20BengkelKoe!%20Saya%20ingin%20memesan%20jasa%20tambal%20ban." target="_blank"><button id="buttonShort">Pesan!</button></a>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>
