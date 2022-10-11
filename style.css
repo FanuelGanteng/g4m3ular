@@ -4,12 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 /* GLOBAL =========================================================================================== */
 body {
-  --header-height: 50px;
-  margin: var(--header-height) 0 0 0;
   font-family: 'Muli', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -27,6 +27,8 @@ body {
 }
 
 .header__button {
+  --header-height: 20px;
+  margin: var(--header-height) 0 0 20px;
   width: var(--header-height);
   flex-shrink: 0;
   background: none;
@@ -191,7 +193,7 @@ body {
   margin-right: 5vw;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
   width: 90vw;
 }
 
@@ -199,6 +201,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  padding-top: 25px;
 }
 
 .serviceCards{
@@ -210,6 +213,7 @@ body {
 
 .serviceCards h1{
   padding: 25px;
+  padding-top: 77px;
   color: whitesmoke;
   font-weight: 700;
 }
@@ -219,6 +223,7 @@ body {
   font-weight: 400;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 25px;
 }
 
 
