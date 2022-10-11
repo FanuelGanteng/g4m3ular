@@ -7,60 +7,93 @@
 }
 
 /* GLOBAL =========================================================================================== */
-#navbar {
-  cursor: pointer;
-  padding: 2vw;
-  display: flex;
-  justify-content: space-between;
+body {
+  --header-height: 50px;
+  margin: var(--header-height) 0 0 0;
+  font-family: 'Muli', sans-serif;
 }
-.wrapper .sidebar{
-  background: rgb(5, 68, 104);
+
+.preload * {
+  transition: none !important;
+}
+
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
-  height: 100%;
-  padding: 20px 0;
-  transition: all 0.5s ease;
-}
-#sidebar{
-  padding-top: 3%;
-  padding-left: 3%;
-  font-size: 180%;
-}
-#logo{
+  width: 100%;
+  height: var(--header-height);
   display: flex;
-  justify-content: flex-end;
 }
-.wrapper .section{
-  width: calc(100% - 225px);
-  margin-left: 225px;
-  transition: all 0.5s ease;
+
+.header__button {
+  width: var(--header-height);
+  flex-shrink: 0;
+  background: none;
+  outline: none;
+  border: none;
+  color: #6844B4 ;
+  cursor: pointer;
 }
-.wrapper .section .top_navbar{
-  background: rgb(7, 105, 185);
-  height: 50px;
+
+.nav__links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100vh;
+  width: 250px;
+  background: #ffffff;
+  transform: translateX(-250px);
+  transition: transform 0.3s;
+}
+
+.nav--open .nav__links {
+  transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link {
   display: flex;
   align-items: center;
-  padding: 0 30px;
-}
-.wrapper .section .top_navbar .hamburger a{
-  font-size: 28px;
-  color: #f4fbff;
-}
-.wrapper .section .top_navbar .hamburger a:hover{
-  color: #a2ecff;
-}
-body.active .wrapper .sidebar{
-  left: -225px;
+  color: #6844B4;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: transform 0.2s;
 }
 
-body.active .wrapper .section{
-  margin-left: 0;
-  width: 100%;
+.nav__link > i {
+  margin-right: 15px;
 }
 
+.nav__link--active {
+  color: #4824a4;
+}
 
+.nav__link--active,
+.nav__link:hover {
+  background: #eeeeee;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav--open .nav__overlay {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 #buttonShort{
@@ -139,6 +172,59 @@ body.active .wrapper .section{
 
 #ambulance a{
   padding-top: 5vmin;
+}
+
+#cardIntro{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#cardIntro h1{
+  padding-top: 30vmin;
+
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+#cardContainer{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90vw;
+}
+
+#cards{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.serviceCards{
+  background-image: url('./Resources/card.png');
+  width: 340px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+.serviceCards h1{
+  padding: 25px;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.serviceCards p{
+  color: whitesmoke;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+#cards a{
+  text-decoration: none;
+  height: 50vmin;
 }
 
 
