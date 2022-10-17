@@ -279,6 +279,18 @@ body {
   height: 50vmin;
 }
 
+
+
+/* EMERGENCY ========================================================================================== */
+
+#callEmergency{
+  padding-top: 100px;
+}
+
+#callEmergency p{
+  padding-top: 70px;
+}
+
 /* FOOTER ============================================================================================= */
 .container{
 	max-width: 1170px;
@@ -340,8 +352,22 @@ ul{
   margin-left: 5vw;
   margin-right: 7vw;
 }
-hr {
-  border: 1.5px solid #4626A4;
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.image-footer2 a{
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright{
+  font-size: 0.5em;
+  margin-left: 7vw;
+  color: #6844B4;
+  font-weight: 300;
 }
 .image-footer2 img {
   margin: 0 0 0 2vw;

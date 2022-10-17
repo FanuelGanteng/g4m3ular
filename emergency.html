@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <title>Emergency by BengkelKoe</title>
 </head>
 <body>
@@ -63,14 +70,71 @@
         });
     </script>
 
-    <div class="Tulisan-Emergency">
+    <section id = "bodyHome">
         <h1>Emergency Help Needed?</h1>
-        <h2>Kami akan mengarahkan anda kepada panggilan telepon darurat</h2>
-        <div class="v1_23"><div class="v1_24"></div><div class="v1_25"></div><div class="v1_26"></div></div></body></html> <br/><br/>
-        <h3>Tekan tombol diatas untuk menghubungi Layanan Nomor Panggilan Darurat 112</h3>
-        <h4>Punya pertanyaan?</h4>
-    </div>
+        <p>Kami akan mengarahkan anda kepada panggilan telepon darurat</p>
 
-    </div>
+        <center>
+            <div id = "callEmergency">
+                <a href="tel:112">
+                    <img src="./Resources/call.png" alt="">
+                </a>
+
+                <p>Tekan tombol diatas untuk <br>menghubungi Layanan Nomor <br>Panggilan Darurat 112</p>
+            </div>
+        </center>
+        <br>
+    </section>
+
+    <br>
+    <section id = "CTAnow">
+        <center>
+        <h2>Punya pertanyaan?</h2>
+        <br>
+            <div id = "buttonLong">
+                <a href="./faq.html" target="_blank"><button id="buttonShort">Frequently Asked Questions</button></a>
+            </div>
+        </center>
+    </section>
+
+ <!-- footer -->
+ <br>
+ <hr width="100%" color="#4626A4" size="1vw" />
+ <br>
+
+ <footer class="footer">
+     <br>
+     <div class="image-footer">
+         <a href="./home.html">
+             <img src="./Resources/logo.png">
+         </a>
+     </div>
+     <div class="container">
+         <div class="row">
+             <div class="footer-col">
+                 <ul>
+                     <br>
+                     <li><a href="./about-us.html">About Us</a></li>
+                     <li><a href="./faq.html">Frequently Asked Questions</a></li>
+                     <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                     <li><a href="./term-of-service.html">Term of Service</a></li>
+                     <br>
+                 </ul>
+             </div>
+         </div>
+         <div class="image-footer2">
+             <div class = footer-flex>
+                 <a href="https://instagram.com/bengkelkoe" target="_blank"><img src="./Resources/instagram.png" width="100%"></a>
+                 <a href="mailto:bengkelkoeid@gmail.com" target="_blank"><img src="./Resources/mail.png" width="102.5%"></a>
+                 <a href="https://Wa.me/6282115983575?text=Halo%20BengkelKoe!" target="_blank"><img src="./Resources/whatsapp.png" width="101%"></a>
+             </div>
+         </div>
+         <div class="copyright">
+             <br>
+             <h1>©2022 BengkelKoe</h1>
+             <br>
+         </div>
+     </div>
+ </footer>
 </body>
 </html>
