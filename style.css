@@ -338,11 +338,55 @@ body {
   color: #4824a4;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
+
+
+/* RESPONSIVE ========================================================================================== */
+
+
+/*mobile devices like iphone*/
+@media (max-width: 461px) {
+  .namaclass {
+      right: 5%;
+      left: 5%;
+  }
+}
+
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  .namaclass {
+      right: 35%;
+      left: 35%;
+  }
+}
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:641px) and (max-width:961px) {
+  .namaclass {
+      top: 25%;
+      right: 25%;
+      left: 25%;
+  }
+}
+
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:962px) and (max-width:1024px) {
+  .namaclass {
+      right: 30%;
+      left: 30%;
+  }
+}
+
+
+
 /* FOOTER ============================================================================================= */
 .container{
 	max-width: 1170px;
 	margin:auto;
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
