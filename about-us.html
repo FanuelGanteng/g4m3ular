@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
-    <script src="app2.js"></script>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <script src ="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
     <title>About us</title>
 </head>
 <body>
@@ -57,7 +64,7 @@
         <main>
         </main>
         <script>
-                    window.addEventListener("load", () => {
+            window.addEventListener("load", () => {
                 document.body.classList.remove("preload");
             });
     
@@ -72,6 +79,30 @@
                     nav.classList.remove("nav--open");
                 });
             });
+
+        $(document).ready(function(){
+            $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+            });
+        });
+
         </script>
         <!-- end navbar -->
 
@@ -86,11 +117,41 @@
             <iframe width="336vw" height="189vw" src="https://www.youtube.com/embed/wN-mZtbX2Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </center>
 
-        <h1>3 Pillar pelayanan</h1>
+        <center>
+            <h1>3 Pillar pelayanan</h1>
+        </center>
         <br>
 
-            
     </section>
+
+    <section class="work" id="work">
+        <div class="max-widthCarousel">
+            <div class="carousel owl-carousel">
+                <div class="cardCarousel">
+                    <div class="boxCarousel">
+                        <img src="./Resources/instagram.png" alt="">
+                        <div class="textCarousel">Kecepatan</div>
+                        <p>lalalaalalalala.</p>
+                    </div>
+                </div>
+                <div class="cardCarousel">
+                    <div class="boxCarousel">
+                        <img src="./Resources/card.png" alt="">
+                        <div class="textCarousel">Kenyamanan</div>
+                        <p>lalalaalalalala.</p>
+                    </div>
+                </div>
+                <div class="cardCarousel">
+                    <div class="boxCarousel">
+                        <img src="./Resources/card.png" alt="">
+                        <div class="textCarousel">Kemudahan</div>
+                        <p>lalalaalalalala.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 

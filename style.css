@@ -9,10 +9,10 @@
 }
 
 /* GLOBAL =========================================================================================== */
-body {
+/* body {
   font-family: 'Muli', sans-serif;
 }
-
+*/
 .preload * {
   transition: none !important;
 }
@@ -180,6 +180,26 @@ body {
   padding-bottom: 30vmin;
 }
 
+#CTAnow h2{
+  font-weight: 700;
+}
+
+#topTag{
+  border-radius: 50px;
+    color: #4626A4;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: #FCDA42;
+    border: #FCDA42;
+    z-index: -1;
+}
+
 
 /* HOME ============================================================================================= */
 #bodyHome{
@@ -190,6 +210,18 @@ body {
 #bodyHome h1{
   padding-top: 30vmin;
 
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+#bodyHomeFaq{
+  margin-top: 15vmin;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+#bodyHomeFaq h1{
+  margin-top: 10vmin;
   font-size: 2.2em;
   font-weight: 900;
 }
@@ -280,6 +312,72 @@ body {
 }
 
 
+/* ABOUT US ========================================================================================== */
+.cardCarousel{
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+.work .carousel .cardCarousel{
+  background: #6844B4;
+  border-radius: 10px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.work .carousel .cardCarousel:hover{
+  background: #6844B4;
+}
+.work .carousel .cardCarousel .boxCarousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.work .carousel .cardCarousel .boxCarousel p{
+  color: white;
+}
+.work .carousel .cardCarousel:hover .boxCarousel{
+  transform: scale(1.05);
+}
+.work .carousel .cardCarousel .textCarousel{
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.work .carousel .cardCarousel img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.work .carousel .cardCarousel:hover img{
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #6844B4!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;   
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #6844B4!important;
+}
 
 /* EMERGENCY ========================================================================================== */
 
