@@ -200,7 +200,18 @@
     z-index: -1;
 }
 
+#judulcorner{
+  border-radius: 0px 10px 10px 0px;
+  background: #4824a4;
+  padding: 20px;
+  width: 60vw;
+  height: 7vh;
+  text-align: center;
+}
 
+#judulcorner h3{
+  color: #FCDA42;
+}
 /* HOME ============================================================================================= */
 #bodyHome{
   margin-left: 7vw;
