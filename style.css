@@ -17,6 +17,16 @@
   transition: none !important;
 }
 
+
+
+html { 
+  background: url(./Resources/bg1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .header {
   /* position: fixed; */
   top: 0;
