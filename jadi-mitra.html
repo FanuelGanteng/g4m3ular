@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jadi Mitra BengkelKoe</title>
+</head>
+<body>
+    <body class="preload">
+        <header class="header">
+            <button class="header__button" id="btnNav" type="button">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="image">
+                <a href="./home.html">
+                    <img src="./Resources/logo.png">
+                </a>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__links">
+                <a class="nav__link" href="./home.html">
+                    <i class="material-icons">home</i>
+                    Home
+                </a>
+                <a class="nav__link nav__link--active" href="./jumper-aki.html">
+                    <i class="material-icons">bolt</i>
+                    Jumper Aki
+                </a>
+                <a class="nav__link" href="./tambal-ban.html">
+                    <i class="material-icons">tire_repair</i>
+                    Tambal Ban
+                </a>
+                <a class="nav__link" href="./jasa-derek.html">
+                    <i class="material-icons">car_crash</i>
+                    Jasa Derek
+                </a>
+                <a class="nav__link" href="./emergency.html">
+                    <i class="material-icons">emergency</i>
+                    Ambulance
+                </a>
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
+        <main>
+        </main>
+        <script>
+                    window.addEventListener("load", () => {
+                document.body.classList.remove("preload");
+            });
+    
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector(".nav");
+    
+                document.querySelector("#btnNav").addEventListener("click", () => {
+                    nav.classList.add("nav--open");
+                });
+    
+                document.querySelector(".nav__overlay").addEventListener("click", () => {
+                    nav.classList.remove("nav--open");
+                });
+            });
+        </script>
+
+<section id = "bodyHome">
+    <h2>Yuk, mulai karir Anda bersama kami!</h2>
+    <br>
+    <p>Mari menghasilkan pendapat dengan bermitra bersama kami.</p>
+
+    <br>
+        <div id = "buttonLong">
+            <a href="https://Wa.me/6282115983575?text=Halo%20BengkelKoe!%20Saya%20ingin%20menjadi%20mitra." target="_blank"><button id="buttonShort">Daftar Sekarang</button></a>
+        </div>
+    
+        <div id = "partnerStory">
+            <h3>Dengarkan cerita dari mitra kami.</h3>
+            <br>
+            <img src="./Resources/partnercard.png" alt="">
+        </div>   
+        
+</section>
+
+<section id = "bodyTerm">
+    <br>
+    <br>
+    <div id = "judulcorner">
+        <h3>Ketentuan Umum</h3>
+    </div>
+    <br>
+    <p>
+        WNI <br> 
+        Mampu membaca dan menulis <br>
+        Minimal berusia 18 tahun <br>
+        Memiliki pemahaman tentang kendaraan <br>
+    </p>
+
+    <br>
+    <div id = "judulcorner">
+        <h3>Dokumen</h3>
+    </div>
+    <br>
+    <p>
+        KTP  <br> 
+        Buku Rekening<br>
+    </p>
+
+    <br>
+    <div id = "judulcorner">
+        <h3>Tata Cara</h3>
+    </div>
+    <br>
+    <p>
+        1. Pastikan dokumen Anda siap dan masih berlaku. <br>
+        2. Daftar secara online melalui tombol “Jadi Mitra Sekarang”. <br>
+        3. Anda telah terhubung dengan Bengkelkoe.<br> 
+    </p>
+</section>
+
+
+<section id = "CTAnow">
+    <center>
+        <div id = "buttonLong">
+            <a href="https://Wa.me/6282115983575?text=Halo%20BengkelKoe!%20Saya%20ingin%20menjadi%20mitra." target="_blank"><button id="buttonShort">Jadi Mitra Sekarang!</button></a>
+        </div>
+    </center>
+</section>
+
+<section id = "CTAnow">
+    <center>
+    <h2>Punya pertanyaan?</h2>
+    <br>
+        <div id = "buttonLong">
+            <a href="./faq-partner.html"><button id="buttonShort">Frequently Asked Questions</button></a>
+        </div>
+    </center>
+</section>
+
+
+ <!-- footer -->
+ <br>
+ <hr width="100%" color="#4626A4" size="1vw" />
+ <br>
+
+ <footer class="footer">
+     <br>
+     <div class="image-footer">
+         <a href="./home.html">
+             <img src="./Resources/logo.png">
+         </a>
+     </div>
+     <div class="container">
+         <div class="row">
+             <div class="footer-col">
+                 <ul>
+                    <br>
+                    <li><a href="./jadi-mitra.html">Jadi Mitra</a></li>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./faq-partner.html">Frequently Asked Questions Partner</a></li>
+                    <li><a href="./faq.html">Frequently Asked Questions</a></li>
+                    <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="./term-of-service.html">Term of Service</a></li>
+                    <br>
+                 </ul>
+             </div>
+         </div>
+         <div class="image-footer2">
+             <div class = footer-flex>
+                <a href="https://instagram.com/bengkelkoe" target="_blank"><img src="./Resources/instagram.png" width="80%"></a>
+                <a href="mailto:bengkelkoeid@gmail.com" target="_blank"><img src="./Resources/mail.png" width="82.5%"></a>
+                <a href="https://Wa.me/6282115983575?text=Halo%20BengkelKoe!" target="_blank"><img src="./Resources/whatsapp.png" width="81%"></a>
+             </div>
+         </div>
+         <div class="copyright">
+             <br>
+             <h1>©2022 BengkelKoe</h1>
+             <br>
+         </div>
+     </div>
+ </footer>
+
+
+</body>
+</html>
