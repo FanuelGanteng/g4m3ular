@@ -235,6 +235,10 @@ html {
   font-weight: 900;
 }
 
+#bodyHome h2{
+  padding-top: 30vmin;
+}
+
 #bodyHomeFaq{
   margin-top: 15vmin;
   margin-left: 7vw;
@@ -473,6 +477,17 @@ html {
   margin-right: 7vw;
   font-size: 1.2em;
 }
+
+/* JADI MITRA ========================================================================================== */
+
+#partnerStory{
+padding-top: 20vmin;
+}
+
+
+
+
+
 
 /* RESPONSIVE ========================================================================================== */
 
