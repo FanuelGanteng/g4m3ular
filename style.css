@@ -376,7 +376,7 @@ html {
   height: 8vh;
   margin-top: 3vh;
   background-color: white;
-  box-shadow: 0px -30px 30px white;
+  box-shadow: 0px -50px 30px white;
 }
 
 #buttonLongBottomFixed .buttonLongFixed{
@@ -393,7 +393,7 @@ html {
   transition-duration: 0.4s;
   cursor: pointer;
   width: 92%;
-  margin-top: 1vh;
+  margin-top: -10vh;
 }
 
 /* ABOUT US ========================================================================================== */
