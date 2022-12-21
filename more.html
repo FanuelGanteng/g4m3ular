@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <title>Our Services</title>
+</head>
+<body>
+<!-- masukin semua ( sidebar footer logo diatas).. nnti komen ini dihapus aja  -->
+<!-- navbar -->
+<header class="header">
+    <button class="header__button" id="btnNav" type="button">
+        <i class="material-icons">menu</i>
+    </button>
+    <div class="image">
+        <a href="./home.html">
+            <img src="./Resources/logo.png">
+        </a>
+    </div>
+</header>
+<nav class="nav">
+    <div class="nav__links" href="#">
+        <a class="nav__link nav__link--active" href="./home.html">
+            <i class="material-icons">home</i>
+            Home
+        </a>
+        <a class="nav__link" href="./about-us.html">
+            <i class="material-icons">water_drop</i>
+            About Us
+        </a>
+        <a class="nav__link" href="./faq.html">
+            <i class="material-icons">airline_seat_recline_extra</i>
+            FAQ
+        </a>
+        <a class="nav__link" href="./privacy-policy.html">
+            <i class="material-icons">sunny</i>
+            Privacy Policy
+        </a>
+        <a class="nav__link" href="./term-of-service.html">
+            <i class="material-icons">bolt</i>
+            Term of Service
+        </a>
+        <a class="nav__link" href="./jadi-mitra.html">
+            <i class="material-icons">emergency</i>
+            Jadi Mitra
+        </a>
+    </div>
+    <div class="nav__overlay"></div>
+</nav>
+<main>
+</main>
+<script>
+            window.addEventListener("load", () => {
+        document.body.classList.remove("preload");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.querySelector(".nav");
+
+        document.querySelector("#btnNav").addEventListener("click", () => {
+            nav.classList.add("nav--open");
+        });
+
+        document.querySelector(".nav__overlay").addEventListener("click", () => {
+            nav.classList.remove("nav--open");
+        });
+    });
+</script>
+<!-- end navbar -->
+<section id="cardContainer">
+        <br>
+        <section id="cards">
+            <a href="./carwash.html">
+                <div class="serviceCards">
+                    <p>Mulai dari fogging hingga cuci mobil, lengkap!</p>
+                    <h1>Carwash</h1>
+                </div>
+            </a>
+        </section>
+        <br>
+        <section id="cards">
+            <a href="./jasa-derek.html">
+                <div class="serviceCards">
+                    <p>Perlu jasa derek buat kendaraanmu?</p>
+                    <h1>Jasa Derek</h1>
+                </div>
+            </a>
+        </section>
+        <br>
+        <section id="cards">
+            <a href="./ganti-oli.html">
+                <div class="serviceCards">
+                    <p>Sering lupa dengan servis rutin terpenting?</p>
+                    <h1>Ganti Oli</h1>
+                </div>
+            </a>
+        </section>
+        <br>
+        <section id="cards">
+            <a href="./jumper-aki.html">
+                <div class="serviceCards">
+                    <p>Kendaraan mogok dan aki ga berfungsi?</p>
+                    <h1>Jumper Aki</h1>
+                </div>
+            </a>
+        </section>
+        <br>
+        <section id="cards">
+            <a href="./tambal-ban.html">
+                <div class="serviceCards">
+                    <p>Perjalanan masih jauh... <br>ban malah bocor</p>
+                    <h1>Tambal Ban</h1>
+                </div>
+            </a>
+        </section>
+        <br>
+        
+    </section>
+<!-- footer -->
+<br>
+<hr width="100%" color="#4626A4" size="1vw" />
+<br>
+<footer class="footer">
+    <br>
+    <div class="image-footer">
+        <a href="./home.html">
+            <img src="./Resources/logo.png">
+        </a>
+    </div>
+    <div class="container">
+        <div class="image-footer2">
+            <div class = footer-flex>
+                <a href="https://instagram.com/bengkelkoe" target="_blank"><img src="./Resources/instagram.png" width="80%"></a>
+                <a href="mailto:bengkelkoeid@gmail.com" target="_blank"><img src="./Resources/mail.png" width="82.5%"></a>
+                <a href="https://Wa.me/6282115983575?text=Halo%20BengkelKoe!" target="_blank"><img src="./Resources/whatsapp.png" width="81%"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <br>
+            <h1>©2022 BengkelKoe</h1>
+            <br>
+        </div>
+        <br>
+    </div>
+</footer>

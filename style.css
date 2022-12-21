@@ -336,6 +336,37 @@ html {
   height: 50vmin;
 }
 
+#iconContainer{
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+#iconFlex1, #iconFlex2{
+  width: 86vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#iconFlex1 a, #iconFlex2 a{
+  width: 30%;
+  height: 30%;
+}
+
+#textFlex{
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#iconFlex p{
+  width: 30%;
+}
+
+#iconFlex p{
+  text-align: center;
+}
 
 /* ABOUT US ========================================================================================== */
 .cardCarousel{
@@ -483,6 +514,8 @@ html {
 #partnerStory{
 padding-top: 20vmin;
 }
+
+
 
 
 
