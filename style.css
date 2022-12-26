@@ -24,6 +24,9 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -232,7 +235,6 @@ html {
 
 #bodyHome h1{
   padding-top: 30vmin;
-
   font-size: 2.2em;
   font-weight: 900;
 }
@@ -402,6 +404,21 @@ html {
 }
 
 /* ABOUT US ========================================================================================== */
+#bodyAboutUs{
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+.AboutUsfont h1{
+  font-size: 2.2em;
+}
+.AboutUsfont h2{
+  font-size: 1.5em;
+}
+.AboutUsfont p{
+  padding-top: 2vw;
+  font-size: 1.0em;
+  font-weight: 500;
+}
 .cardCarousel{
   margin-left: 7vw;
   margin-right: 7vw;
@@ -573,6 +590,7 @@ padding-top: 20vmin;
       right: 35%;
       left: 35%;
   }
+
 }
 
 
@@ -594,11 +612,81 @@ padding-top: 20vmin;
   }
 }
 
+/* full screen laptop */
+@media (min-width:1080px) {
+
+  /* Home ==================================================== */
+  /* Icon Responsives */ 
+  #iconContainer{
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+
+  #iconIntro{
+    text-align: center;
+  }
+  
+  #iconFlex1, #iconFlex2{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #iconFlex1 a, #iconFlex2 a{
+    width: 30%;
+    height: 30%;
+  }
+  
+  #textFlex{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 40vw;
+
+  }
+  
+  #iconFlex p{
+    width: 30%;
+  }
+  
+  #iconFlex p{
+    text-align: center;
+  }
+
+  /* footer responsive */
+  .footer-flex img{
+    width: 60%;
+  }
+
+
+  /* ABOUT US =============================== */
+  /* about us responsive */
+  #bodyAboutUs{
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+  .AboutUsfont h1{
+    font-size: 3em;
+  }   
+  .AboutUsfont p{
+    padding-top: 2vw;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .AboutUsfont h2{
+    padding-top: 2vw;
+  }
+
+
+}
+
 
 
 /* FOOTER ============================================================================================= */
 .container{
-	max-width: 1170px;
 	margin:auto;
 }
 
@@ -634,27 +722,11 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
 
 .image-footer2 {
   display: flex;
   flex-direction: column;
-  width: 86vw;
+  width: 68vw;
   margin-left: 5vw;
   margin-right: 7vw;
 }
@@ -675,14 +747,20 @@ ul{
   color: #6844B4;
   font-weight: 300;
 }
+
 .image-footer2 img {
   margin: 0 0 0 2vw;
 }
+
+
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+}
+  .image-footer2 {
+    margin-left: 3vw;
 }
 }
 @media(max-width: 574px){
